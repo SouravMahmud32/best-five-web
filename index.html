@@ -226,9 +226,44 @@
                             
                           </tbody>
                         </table>
+                        <div>
+                            <div class="">
+                                <h2 class="text-3xl font-semibold text-center mt-5 pb-5">Budget</h2>
+                                <div class="flex place-content-center">
+                                  <h3 class="font-semibold">Per-Player:</h3>
+                                  <input id="budget-field" class="p-1.5 ml-2" type="number" name="" />
+                                </div>
+                                <div class="flex items-center justify-center my-5">
+                                    <button id="btn-calculate"
+                                      class="bg-cyan-600 mt-2 px-8 py-2 text-white font-medium rounded-lg hover:bg-cyan-900">
+                                      Calculate
+                                    </button>
+                                  </div>
+                                <div class="flex place-content-center my-2">
+                                    <h2 class="font-semibold mt-5 pb-5">
+                                        Player Expenses: <span id="player-expense">00</span>
+                                    </h2>
+                                </div>
+                                <div class="flex place-content-center my-2">
+                                  <h3 class="font-semibold">Manager:</h3>
+                                  <input id="manager-field" class="p-1.5 ml-2" type="number" name="" />
+                                </div>
+                                <div class="flex place-content-center my-2">
+                                  <h3 class="font-semibold">Coach:</h3>
+                                  <input id="coach-field" class="p-1.5 ml-2" type="number" name="" />
+                                </div>
+                                <div class="flex items-center justify-center my-5">
+                                  <button id="btn-total"
+                                    class="bg-cyan-600 mt-2 px-8 py-2 text-white font-medium rounded-lg hover:bg-cyan-900">
+                                    Calculate Total
+                                  </button>
+                                </div>
+                                <h3 class="font-semibold text-center mt-5 pb-5">Total: <span id="expense-total">00</span></h3>
+                            </div>
+                        </div>
                       </div>
                 </div>
-              </div>
+            </div>
         </section>
     </main>
 
