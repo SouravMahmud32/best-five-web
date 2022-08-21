@@ -44,7 +44,7 @@
                               <p>32 Goals</p>
                               <p>135 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary" onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                               <p>37 Goals</p>
                               <p>123 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary" onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                               <p>32 Goals</p>
                               <p>105 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary" onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -92,7 +92,7 @@
                               <p>29 Goals</p>
                               <p>99 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary" onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@
                               <p>34 Goals</p>
                               <p>117 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary" onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                               <p>35 Goals</p>
                               <p>119 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary" onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                               <p>38 Goals</p>
                               <p>127 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary"  onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                               <p>39 Goals</p>
                               <p>130 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary" onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
                               <p>23 Goals</p>
                               <p>101 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary" onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -188,7 +188,7 @@
                               <p>29 Goals</p>
                               <p>107 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary" onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                               <p>21 Goals</p>
                               <p>108 Assist</p>
                               <div class="card-actions">
-                                <button class="btn btn-primary">Select</button>
+                                <button class="btn btn-primary" onclick="addToList(this)">Select</button>
                               </div>
                             </div>
                         </div>
@@ -213,16 +213,16 @@
                 <!-- selection part -->
                 <div>
                     <!-- table  -->
-                    <div class="overflow-x-auto">
-                        <table class="table w-full">
+                    <div class="overflow-x-auto ">
+                        <table class="table w-full text-center">
                           <!-- head -->
                           <thead>
                             <tr>
                               <th></th>
-                              <th class="text-center text-xl font-semibold text-black">Selected-V</th>
+                              <th class="text-center text-xl font-semibold">Selected-V</th>
                             </tr>
                           </thead>
-                          <tbody>
+                          <tbody id="name-display-table" class="text-xl">
                             
                           </tbody>
                         </table>
