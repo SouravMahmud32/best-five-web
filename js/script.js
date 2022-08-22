@@ -58,4 +58,4 @@ document.getElementById('btn-total').addEventListener('click', function(){
     const previousAllExpenseTotalString = allExpenseTotalElement.value;
     const newAllExpenseTotal = parseFloat(previousAllExpenseTotalString);
     allExpenseTotalElement.innerText = totalCost;
-})
+});
