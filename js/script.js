@@ -1,3 +1,5 @@
+/* Player list part */ 
+
 const playerListArray = [];
 
 function displayPlayerName(AllPlayerName){
@@ -17,6 +19,9 @@ function displayPlayerName(AllPlayerName){
 }
 
 function addToList(player){
+    if(playerListArray.length < 5 ){
+    player.setAttribute("disabled", true);
+
     const playerName = player.parentNode.parentNode.children[0].innerText;
 
     const playerObject = {
@@ -24,6 +29,10 @@ function addToList(player){
     }
     playerListArray.push(playerObject);
     displayPlayerName(playerListArray);
+    }
+    else{
+        alert('SORRY! You can not select more than Five')
+    }
 }
 
 /* Calculate Part */ 
@@ -33,11 +42,13 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     const budgetAmountString = budgetField.value;
     budgetAmount = parseFloat(budgetAmountString);
     let totalPlayerExpenses = budgetAmount * playerListArray.length;
-    // console.log(totalPlayerExpenses);
+    
+
     const playerExpenseTotalElement = document.getElementById('player-expense');
     const previousPlayerExpenseTotalString = playerExpenseTotalElement.innerText;
     const newTotalPlayerExpense = parseFloat(previousPlayerExpenseTotalString);
     playerExpenseTotalElement.innerText = totalPlayerExpenses;
+    budgetField.value ='';
 });
 
 document.getElementById('btn-total').addEventListener('click', function(){
@@ -52,7 +63,7 @@ document.getElementById('btn-total').addEventListener('click', function(){
     let totalPlayerExpenses = budgetAmount * playerListArray.length;
 
     let totalCost = totalPlayerExpenses + managerAmount + coachAmount;
-    // console.log(totalCost);
+    
 
     const allExpenseTotalElement = document.getElementById('expense-total');
     const previousAllExpenseTotalString = allExpenseTotalElement.value;
